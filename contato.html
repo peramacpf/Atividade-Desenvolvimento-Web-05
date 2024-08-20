@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Formuçário de Contato</title>
+</head><!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato:</title>
+</head>
+<body bgcolor="lightgrey">
+    <h2 align="center">Cadastro</h2>
+    <table align="center" bgcolor="lightblue">
+        <tr>
+            <td>
+                <form action="cadastrar.php" method="post" name="cadastro" oninput="x.value=parseInt(a.value);">
+                    <fieldset>
+                        <legend> Informações de Cadastro </legend>
+                        <table cellspacing="5" cellpadding="5" align="center">
+                            <tr>
+                                <td><label>Nome:</label></td>
+                                <td><input type="text" name="nome" id="nome" size="40" maxlength="90" placeholder="Digite o seu nome:" required></td>
+                            </tr>
+                            <tr>
+                                <td><label>Telefone:</label></td>
+                                <td><input type="text" name="telefone" id="telefone" size="40" maxlength="90" placeholder="Digite o seu telefone:" required></td>
+                            </tr>
+                            <tr>
+                                <td><label>Email:</label></td>
+                                <td><input type="text" name="email" id="email" size="40" maxlength="90" placeholder="Digite o seu email:" required></td>
+                            </tr>
+                            <tr>
+                                <td><label>Mensagem:</label></td>
+                                <td>
+                                    <textarea type="coment" name="coment" id="coment" cols="40" rows="6" maxlength="240" placeholder="Escreva uma mensagem ou dúvida que você possa ter"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label>Assunto:</label></td>
+                                <td>
+                                    <label><input type="radio" name="pergunta" id="pergunta">Tirar alguma dúvida</label>
+                                    <label><input type="radio" name="proposta" id="proposta">Proposta de Colaboração</label>
+                                    <br>
+                                    <label><input type="radio" name="feedback" id="feedback">Feedback</label>
+                                    <label><input type="radio" name="outro" id="outro">Outro</label>
+                                </td>
+                                <tr>
+                                    <td><label>Preferência de Contato:</label></td>
+                                    <td>
+                                        <select name="meio_contato" id="meio_contato" required>
+                                            <option value="" disabled selected>--Selecione--</option>
+                                            <option value="telefone">Telefone</option>
+                                            <option value="email">E-Mail</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                        </table>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Informações Adicionais</legend>
+                            <table cellspacing="5" cellpadding="5" >
+                                <tr>
+                                    <td>
+                                        <label> Data de Agendamento: </label>
+                                        <input type="date" name="data" id="data">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label> Horário: </label>
+                                        <input type="time" name="horario" id="horario" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label> Cor Favorita: </label>
+                                        <input type="color" name="cor_fav" id="cor_fav">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label> Quantidade de Obras: </label>
+                                        <input type="number" name="qtd_obras" id="qtd_obras">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label> Média de preço obra: </label>
+                                        <input type="range" id="a" name="a" value="0" min="0" max="500000">
+                                        <output name="x" for="a"></output>
+                                    </td>
+                                </tr>
+                            </tr>
+                            </table>
+                            <tr align="center">
+                                <td>
+                                    <button type="cadastrar.php" id="cadastrar" name="cadastrar">Cadastrar
+                                    </button>
+                                    <button type="reset" id="cadastrar" name="cadastrar">Cancelar</button>
+                                </td>
+                            </tr>
+                        </fieldset>
+                </form>    
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <table align="center">
+        <td colspan="2" align="center">
+            <p>FIM DA PÁGINA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="sobre.html">SOBRE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="contato.html">CONTATO</a></p>
+        </td>
+    </table>
+</body>
+</html>
